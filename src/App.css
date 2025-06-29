@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Rochester:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #2d1f1f;
+  color: white;
+}
+
+/* Navbar CSS */
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  height: 8vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60vw;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: #5642421b;
+}
+
+.logo {
+  font-size: 35px;
+  font-weight: 100;
+  font-family: "Rochester", cursive;
+  font-weight: 100;
+}
+
+.navigations {
+  display: flex;
+  gap: 30px;
+}
+
+.navigations a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  transition: color 0.3s ease-in-out;
+}
+
+.navigations a:hover {
+  color: rgba(255, 255, 255, 0.343);
+}
+
+/* Hero Section CSS */
+.heroSection {
+  height: 100vh;
+  width: 86vw;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.firstLine {
+  font-size: 35px;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 100;
+}
+
+.secondLine {
+  font-size: 90px;
+  font-family: "Righteous";
+}
+
+.thirdLine {
+  font-size: 35px;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 100;
+}
+
+.description {
+  font-size: 15px;
+  margin-top: 20px;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 100;
+  line-height: 1.8;
+}
+
+.image {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background-color: #564242;
+  overflow: hidden; /* Ensures image stays within circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* Prevent stretching, maintain aspect ratio */
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+.links a:nth-child(4),
+.links a:nth-child(5) {
+  font-size: 22px;
+}
+
+.links a:hover {
+  color: rgba(255, 255, 255, 0.406);
+}
+
+.downloadResume {
+  height: 40px;
+  width: 130px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.downloadResume:hover {
+  background-color: rgba(255, 255, 255, 0.414);
+}
+
+/* About Section CSS */
+.aboutSection {
+  height: 100vh;
+  width: 86vw;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aboutMe {
+  font-size: 35px;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 100;
+}
+
+.name {
+  font-size: 70px;
+  font-family: "Righteous";
+  margin-top: 10px;
+}
+
+.description2 {
+  font-size: 15px;
+  margin-top: 20px;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 100;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+.seeMore {
+  margin-top: 40px;
+  height: 40px;
+  width: 120px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.seeMore:hover {
+  background-color: rgba(255, 255, 255, 0.396);
+}
+
+/* Project Section CSS */
+.projectSection {
+  height: 100vh;
+  width: 86vw;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.projectSectionHeading {
+  font-size: 54px;
+  font-weight: 900;
+  font-family: 'Righteous';
+}
+
+.allProjects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+}
+
+.project {
+  height: 200px;
+  width: 300px;
+  background-color: #564242;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+  transition: border 0.5s ease-in-out;
+  cursor: pointer;
+  border: 1px solid #564242;
+}
+
+.project span a {
+  text-decoration: none;
+  color: white;
+}
+
+.project:hover {
+  border: 1px solid white;
+  
+}
+
+.project span:hover {
+  color: white;
+  opacity: 50%;
+}
+
+/* Contact Section CSS */
+.contactSection {
+  height: 100vh;
+  width: 86vw;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contactSectionHeading {
+  font-size: 70px;
+  font-weight: 900;
+  font-family: 'Righteous';
+}
+
+.contactSection button {
+  height: 40px;
+  width: 120px;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contactSection button:hover {
+  background-color: rgba(255, 255, 255, 0.388);
+  cursor: pointer;
+}
