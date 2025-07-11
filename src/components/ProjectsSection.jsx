@@ -75,7 +75,7 @@ const ProjectsSection = () => {
         <div className="allProjects">
           <div className="project1 project"><span><a href="https://loan-ease-delta.vercel.app">LoanEase</a></span></div>
           <div className="project2 project"><span><a href="#home">Portfolio</a></span></div>
-          <div className="project3 project"><span><a href="https://aman739-code.github.io/Student-Grade-Calculator/">Grade Calculator</a></span></div>
+          <div className="project3 project"><span><a href="https://deep-seek-clone-tau.vercel.app">DeepSeek Clone</a></span></div>
           <div className="project4 project"><span><a href="https://calculator-psi-rosy-65.vercel.app">Calculator</a></span></div>
           <div className="project5 project"><span><a href="https://aman739-code.github.io/Word-Counter/">Word Counter</a></span></div>
           <div className="project6 project"><span><a href="https://aman739-code.github.io/A/">Amazon Clone</a></span></div>
